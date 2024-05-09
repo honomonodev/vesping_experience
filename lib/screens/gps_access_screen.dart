@@ -40,7 +40,7 @@ class _AccessButton extends StatelessWidget {
           elevation: 0,
           splashColor: Colors.transparent,
           child: const Text(
-            'Soliciter acceso al GPS',
+            'Solicitar acceso al GPS',
             style: TextStyle(
               color: Colors.white,
             ),
