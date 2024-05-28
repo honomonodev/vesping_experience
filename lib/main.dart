@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vesping_experience/blocs/gps/gps_bloc.dart';
 
+import 'blocs/blocs.dart';
 import 'screens/screens.dart';
 
 void main() {
@@ -9,6 +9,9 @@ void main() {
     providers: [
       BlocProvider(
         create: (context) => GpsBloc(),
+      ),
+      BlocProvider(
+        create: (context) => LocationBloc(),
       ),
     ],
     child: const VespingApp(),
